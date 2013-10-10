@@ -1,0 +1,11 @@
+<!doctype html>
+<title>To do list</title>
+{% if ntodos > 0 %}
+  <ol>
+  {% for todo in todos %}
+    <li>{{ todo.title }}</li>
+  {% endfor %}
+  </ol>
+{% else %}
+  <h1>Nothing to do!</h1>
+{% endif %}
